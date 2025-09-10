@@ -1,0 +1,29 @@
+# Large folders to exclude
+humanoid_amp/
+isaacgym/
+runs/
+
+# Python cache files
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.Python
+*.so
+
+# Specific cache directories
+isaacgymenvs/tasks/amp/poselib/poselib/__pycache__/
+
+# IDE files
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Temporary files
+*.tmp
+*.temp

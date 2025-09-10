@@ -1,5 +1,5 @@
 import bvh
-import visualization as vis
+from . import renderer as vis
 from typing import Iterator
 import time
 
@@ -12,7 +12,7 @@ class MoVisualizer:
                           yields a [N, 3] list
         :param max_fps:   maximum fps
         """
-        self.rnd = vis.renderer.O3DRenderer()
+        self.rnd = vis.O3DRenderer()
         self.p_index = p_index
         self.mo_source = mo_source
         self.max_fps = max_fps
@@ -71,7 +71,7 @@ class MoVisualizer:
 def demo():
     bvh_obj = bvh.parser.BVH('../data/assets/test.bvh')
 
-    import motion_tensor as mot
+    from fmbvh import motion_tensor as mot
     import torch
 
     trs, qua = mot.bvh_casting.get_quaternion_from_bvh(bvh_obj)  # [1, 3, F], [J, 3, F]

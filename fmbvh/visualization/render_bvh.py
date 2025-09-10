@@ -6,10 +6,10 @@ os.environ['KMP_DUPLICATE_LIB_OK'] = 'TRUE'
 import numpy as np
 import matplotlib.pyplot as plt
 
-from bvh.parser import BVH
-from motion_tensor.bvh_casting import *
-from motion_tensor.motion_process import sample_frames
-from motion_tensor.rotations import *
+from fmbvh.bvh.parser import BVH
+from fmbvh.motion_tensor.bvh_casting import *
+from fmbvh.motion_tensor.motion_process import sample_frames
+from fmbvh.motion_tensor.rotations import *
 from PIL import Image
 
 

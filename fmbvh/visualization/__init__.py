@@ -1,2 +1,2 @@
-import visualization.renderer as renderer
-import visualization.visualize_motion as visualize_motion
+from . import renderer
+from . import visualize_motion
